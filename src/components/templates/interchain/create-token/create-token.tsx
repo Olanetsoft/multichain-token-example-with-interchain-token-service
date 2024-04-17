@@ -17,9 +17,6 @@ import {
 import { useContractWrite, useWaitForTransaction, useAccount } from 'wagmi';
 import crypto from 'crypto';
 import { ethers } from 'ethers';
-import interchainTokenFactoryContractABI from '../../../../../contracts/InterchainTokenFactoryABI.json';
-
-const interchainTokenFactoryContractAddress = '0x83a93500d23Fbc3e82B410aD07A6a9F7A0670D66';
 
 const NewInterchainToken: React.FC = () => {
   const { address } = useAccount();
