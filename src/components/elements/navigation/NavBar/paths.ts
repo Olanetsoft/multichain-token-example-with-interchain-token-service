@@ -42,6 +42,30 @@ const NAV_LINKS: ISubNav[] = [
       },
     ],
   },
+  {
+    label: 'Interchain Tokens',
+    href: '/interchain',
+    children: [
+      {
+        label: 'Create a new token',
+        subLabel: 'Create a new Interchain Token',
+        href: '/interchain/new-token',
+        logo: 'token',
+      },
+      {
+        label: 'Deploy token remotely',
+        subLabel: 'Deploy an Interchain Token remotely',
+        href: '/interchain/deploy-token',
+        logo: 'wizard',
+      },
+      {
+        label: 'Transfer token',
+        subLabel: 'Transfer an Interchain Token',
+        href: '/interchain/transfer-token',
+        logo: 'bundle',
+      },
+    ],
+  },
 ];
 
 export default NAV_LINKS;
