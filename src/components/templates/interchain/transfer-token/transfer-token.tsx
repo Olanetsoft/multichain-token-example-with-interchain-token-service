@@ -25,6 +25,7 @@ import { ethers } from 'ethers';
 
 const TransferToken = () => {
   const toast = useToast();
+  const [displayTransactionHash, setDisplayTransactionHash] = useState<string>('');
 
   return (
     <Box padding="7" maxW="xxl" borderWidth="1px" borderRadius="lg" overflow="hidden" margin="auto" marginTop="-20">
@@ -78,6 +79,20 @@ const TransferToken = () => {
         <Button colorScheme="cyan" loadingText="Transferring Token..." w="sm" variant="solid">
           Transfer Token
         </Button>
+        {displayTransactionHash && (
+          <Alert status="info" variant="left-accent" marginTop="2" marginBottom="2">
+            <AlertIcon />
+            Transaction Hash:
+            <Link
+              href={`https://testnet.axelarscan.io/gmp/${displayTransactionHash}`}
+              isExternal
+              color="blue.500"
+              paddingLeft="2"
+            >
+              {displayTransactionHash}
+            </Link>
+          </Alert>
+        )}
       </VStack>
     </Box>
   );
