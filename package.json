@@ -19,7 +19,7 @@
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@moralisweb3/next": "^2.14.1",
+    "@moralisweb3/next": "^2.26.2",
     "@web3uikit/core": "^0.1.5",
     "@web3uikit/icons": "^0.4.1",
     "crypto": "1.0.1",
